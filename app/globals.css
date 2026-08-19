@@ -106,15 +106,19 @@ svg {
 .hero h1 {
   max-width: 860px;
   margin: 25px 0 0;
-  font-size: clamp(5.2rem, 8.7vw, 8.8rem);
+  font-size: clamp(4.8rem, 7.25vw, 7.35rem);
   font-weight: 800;
   letter-spacing: -0.075em;
-  line-height: 0.78;
+  line-height: 0.84;
   text-transform: uppercase;
 }
 
 .hero h1 span {
   display: block;
+}
+
+.hero-title-line {
+  white-space: nowrap;
 }
 
 .hero-word-muted {
@@ -557,7 +561,7 @@ a.project-showcase:focus-visible {
   }
 
   .hero h1 {
-    font-size: clamp(4.6rem, 8.7vw, 6.8rem);
+    font-size: clamp(4.1rem, 7.5vw, 5.8rem);
   }
 
   .project-showcase,
@@ -632,7 +636,7 @@ a.project-showcase:focus-visible {
 
   .hero h1 {
     max-width: 680px;
-    font-size: clamp(4.2rem, 14vw, 6.6rem);
+    font-size: clamp(3.8rem, 12vw, 5.7rem);
   }
 
   .hero-nameplate {
@@ -698,8 +702,8 @@ a.project-showcase:focus-visible {
 
   .hero h1 {
     margin-top: 20px;
-    font-size: clamp(3.55rem, 16vw, 4.5rem);
-    line-height: 0.82;
+    font-size: clamp(2.7rem, 12.8vw, 4rem);
+    line-height: 0.86;
   }
 
   .hero-intro {

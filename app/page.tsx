@@ -182,7 +182,7 @@ export default function Home() {
           <div className="hero-copy">
             <Eyebrow>Developer</Eyebrow>
             <h1 id="hero-title">
-              <span>Web & app</span>
+              <span className="hero-title-line">Web &amp; App</span>
               <span className="hero-word-muted">portfolio</span>
             </h1>
             <p className="hero-intro">
