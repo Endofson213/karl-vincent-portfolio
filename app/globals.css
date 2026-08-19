@@ -398,11 +398,24 @@ svg {
   line-height: 1.58;
 }
 
+.project-stack {
+  margin-top: 16px;
+}
+
+.stack-label {
+  margin: 0 0 8px;
+  color: var(--project-accent);
+  font-family: var(--mono);
+  font-size: 0.48rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
 .tag-list {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-top: 16px;
 }
 
 .tag-list span {

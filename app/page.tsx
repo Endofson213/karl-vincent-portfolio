@@ -25,7 +25,7 @@ const projects: Project[] = [
     summary: "A responsive dealership website for browsing vehicles and sending inquiries.",
     image: "/images/myrdamz-homepage-live.png",
     imageAlt: "MYRDAMZ Cars for Sale Davao website",
-    stack: ["Next.js", "React", "Responsive UI"],
+    stack: ["Next.js", "React", "TypeScript", "CSS"],
     url: "https://myrdamz-cars-for-sale-davao.vercel.app/",
     tone: "blue",
   },
@@ -38,7 +38,7 @@ const projects: Project[] = [
     summary: "An offline-first app for tenants, billing, payments, parking, and reports.",
     image: "/images/villasor-dashboard.jpg",
     imageAlt: "Villasor Property Manager application dashboard",
-    stack: ["React Native", "Expo", "SQLite", "Supabase"],
+    stack: ["React Native", "Expo", "TypeScript", "SQLite", "Supabase"],
     tone: "cyan",
   },
   {
@@ -50,7 +50,7 @@ const projects: Project[] = [
     summary: "A real-estate website with searchable listings and editable property content.",
     image: "/images/msdrr-properties.jpg",
     imageAlt: "MSDRR Properties real-estate website",
-    stack: ["Next.js", "Supabase", "CMS", "Vercel"],
+    stack: ["Next.js", "React", "Supabase", "Framer Motion", "Vercel"],
     url: "https://msdrr-properties.vercel.app/",
     tone: "steel",
   },
@@ -63,7 +63,7 @@ const projects: Project[] = [
     summary: "The Bly Team's recruitment website, showcasing its culture and opportunities for new agents.",
     image: "/images/bly-team.png",
     imageAlt: "The Bly Team group portrait used on joinblyteam.com",
-    stack: ["GoHighLevel", "Content design", "Responsive UI"],
+    stack: ["GoHighLevel"],
     url: "https://joinblyteam.com/",
     tone: "indigo",
     fit: "contain",
@@ -130,8 +130,11 @@ function ProjectShowcase({ project }: { project: Project }) {
 
         <div>
           <p className="project-summary">{project.summary}</p>
-          <div className="tag-list" aria-label={`${project.title} technology stack`}>
-            {project.stack.map((item) => <span key={item}>{item}</span>)}
+          <div className="project-stack">
+            <p className="stack-label">Stack</p>
+            <div className="tag-list" aria-label={`${project.title} technology stack`}>
+              {project.stack.map((item) => <span key={item}>{item}</span>)}
+            </div>
           </div>
           {project.url && (
             <span className="project-visit">Visit website <ArrowUpRight /></span>
