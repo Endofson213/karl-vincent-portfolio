@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type Project = {
   number: string;
@@ -11,6 +12,7 @@ type Project = {
   imageAlt: string;
   stack: string[];
   url?: string;
+  detailUrl?: string;
   tone: "blue" | "cyan" | "steel" | "indigo";
   fit?: "contain";
 };
@@ -39,6 +41,7 @@ const projects: Project[] = [
     image: "/images/villasor-dashboard.jpg",
     imageAlt: "Villasor Property Manager application dashboard",
     stack: ["React Native", "Expo", "TypeScript", "SQLite", "Supabase"],
+    detailUrl: "/projects/villasor-property-manager",
     tone: "cyan",
   },
   {
@@ -136,8 +139,10 @@ function ProjectShowcase({ project }: { project: Project }) {
               {project.stack.map((item) => <span key={item}>{item}</span>)}
             </div>
           </div>
-          {project.url && (
-            <span className="project-visit">Visit website <ArrowUpRight /></span>
+          {(project.url || project.detailUrl) && (
+            <span className="project-visit">
+              {project.detailUrl ? "View case study" : "Visit website"} <ArrowUpRight />
+            </span>
           )}
         </div>
       </div>
@@ -155,6 +160,19 @@ function ProjectShowcase({ project }: { project: Project }) {
       >
         {content}
       </a>
+    );
+  }
+
+  if (project.detailUrl) {
+    return (
+      <Link
+        className={`project-showcase tone-${project.tone}`}
+        href={project.detailUrl}
+        scroll
+        aria-label={`View the ${project.title} case study`}
+      >
+        {content}
+      </Link>
     );
   }
 
