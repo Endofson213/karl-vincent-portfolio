@@ -102,7 +102,7 @@ export default function VillasorCaseStudy() {
             alt="Villasor Property Manager dashboard"
             width={390}
             height={844}
-            priority
+            loading="eager"
             sizes="(max-width: 820px) 82vw, 390px"
           />
         </div>
