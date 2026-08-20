@@ -119,9 +119,6 @@ export default function VillasorCaseStudy() {
             <a className="button button-primary" href="#walkthrough">
               View walkthrough
             </a>
-            <a className="case-text-link" href="mailto:paclarvincentkarl@gmail.com?subject=Villasor%20Property%20Manager">
-              Ask about the project <ArrowUpRight />
-            </a>
           </div>
           <dl className="case-facts">
             <div>
