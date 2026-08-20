@@ -38,7 +38,7 @@ const projects: Project[] = [
     kind: "Android application",
     status: "MVP completed",
     summary: "A property management app for tenants, billing, payments, parking, and reports.",
-    image: "/images/villasor-dashboard.jpg",
+    image: "/images/villasor-dashboard-demo.png",
     imageAlt: "Villasor Property Manager application dashboard",
     stack: ["React Native", "Expo", "TypeScript", "SQLite", "Supabase"],
     detailUrl: "/projects/villasor-property-manager",
